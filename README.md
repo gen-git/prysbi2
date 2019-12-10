@@ -1,6 +1,6 @@
 # PRYSBI2 : crop development simulation
 
-"PRYSBI2" enables us to simulate a crop development model (PRYSBI2). This program include not only the simulation module but also the module by which users can estimate the probability distribution of parameters of the crop model.
+"PRYSBI2" enables us to simulate a crop development model (PRYSBI2) in global scale. This program include not only the simulation module but also the module by which users can estimate the probability distribution of parameters of the crop model using MCMC.
 
 ## Description
 
