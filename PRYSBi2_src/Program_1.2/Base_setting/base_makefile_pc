@@ -1,0 +1,111 @@
+# definition of object files for modules and program
+# directory
+
+objs = ./Various/useful_sub.o
+objs+= ./Divider/var_divide.o
+objs+= ./Reader/var_read_all.o
+objs+= ./MCMC/Mdream_param.o
+objs+= ./MCMC/environ_param.o
+objs+= ./PRYSBI2/control_param.o
+objs+= ./PRYSBI2/spm_param.o
+objs+= ./PRYSBI2/spm_param_fix.o
+objs+= ./PRYSBI2/swatnut_param.o
+objs+= ./PRYSBI2/swatnut_param_fix.o
+objs+= ./PRYSBI2/day_rothc_param.o
+objs+= ./PRYSBI2/day_rothc_param_fix.o
+objs+= ./PRYSBI2/calc_biomass.o
+objs+= ./PRYSBI2/cold_stress.o
+objs+= ./PRYSBI2/micro_met.o
+objs+= ./PRYSBI2/development.o
+objs+= ./PRYSBI2/harvest.o
+objs+= ./PRYSBI2/maintenance.o
+objs+= ./PRYSBI2/photosynthesis.o
+objs+= ./PRYSBI2/param_regulation.o
+objs+= ./PRYSBI2/planting.o
+objs+= ./PRYSBI2/root_structure.o
+objs+= ./PRYSBI2/shoot_structure.o
+objs+= ./PRYSBI2/swatnut.o
+objs+= ./PRYSBI2/day_rothc.o
+objs+= ./PRYSBI2/spm_crops.o
+objs+= ./SWAT_Wt/swatwt_param.o
+objs+= ./SWAT_Wt/swatwt_param_fix.o
+objs+= ./SWAT_Wt/swatwt.o
+objs+= ./Reader/read_kdata_soil.o
+objs+= ./Reader/read_kdata_topo.o
+objs+= ./Reader/read_kdata_weather.o
+objs+= ./Reader/read_kdata_yield.o
+objs+= ./Reader/read_kdata_pheno.o
+objs+= ./Reader/read_kdata_co2.o
+objs+= ./Reader/read_kdata_gdp.o
+objs+= ./Reader/read_kdata_param.o
+objs+= ./Reader/specify_grid_analyzed.o
+objs+= ./Reader/read_all_data_cropcrop.o
+objs+= ./MCMC/Mread_dreamlist_cropcrop.o
+objs+= ./MCMC/Mallocate_dream_param.o
+objs+= ./MCMC/mt.o
+objs+= ./MCMC/Mcalc_llk.o
+objs+= ./MCMC/Mgelman_rubin.o
+objs+= ./MCMC/Moutput_est.o
+objs+= ./MCMC/Moutput_param.o
+objs+= ./MCMC/Mread_data.o
+objs+= ./MCMC/Mread_setting_cropcrop.o
+objs+= ./MCMC/Mrmulti.o
+objs+= ./MCMC/Mrnorm.o
+objs+= ./MCMC/Mrunif.o
+objs+= ./MCMC/Mmodel_setting.o
+objs+= ./MCMC/Mdeallocate_var.o
+objs+= ./MCMC/Mdream.o
+objs+= ./Divider/divide_grid.o
+objs+= ./Divider/cast_basic_info.o
+objs+= ./Divider/path_kdata.o
+objs+= ./Divider/divide_all_data.o
+objs+= ./Divider/cast_setting.o
+objs+= ./main_mcmc.o
+
+# program name of output
+target = main_mcmc_cropcrop.out
+
+# compiler
+#fc = mpiifort
+fc = mpif90
+#fc = ifort
+#fc = gfortran
+
+# compile option
+#fcflags = -O2 -CB -traceback -g -assume byterecl
+fcflags = -O -fimplicit-none -fno-range-check -fbounds-check
+#fcflags = -assume byterecl
+#fcflags = -O -fimplicit-none -fbounds-check -fno-range-check
+
+#lib = -lmpi -L$(MKLROOT)/lib/intel64 -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm
+
+# suffix rule
+.SUFFIXES : .f90 .o
+
+# linking
+$(target) : $(objs)
+	$(fc) $(objs) -o $@ $(lib)
+
+# linking
+$(target2) : $(objs2)
+	$(fc) $(objs2) -o $@
+
+# implicit rule1
+.f90.o :
+	$(fc) -c $(fcflags) $< -o $@
+
+clean:
+	rm -f *.o
+	rm -f *.mod
+	rm -f ./PRYSBI2/*.o
+	rm -f ./SWAT_Wt/*.o
+	rm -f ./Reader/*.o
+	rm -f ./Divider/*.o
+	rm -f ./Various/*.o
+	rm -f ./MCMC/*.o
+	rm -f *.out
+
+wipe:
+	rm -f main_mcmc.o
+	rm -f main_mcmc.mod
+	rm -f *.exe

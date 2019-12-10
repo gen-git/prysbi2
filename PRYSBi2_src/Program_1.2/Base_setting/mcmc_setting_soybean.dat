@@ -1,0 +1,14 @@
+Name                typeprior lim(lw)   lim(up)      avprior   sdprior
+x1                   0            0.0      10.0      -9999.0   -9999.0
+x2                   0            0.0       1.0      -9999.0   -9999.0
+x3                   0          -0.05      0.05      -9999.0   -9999.0
+x4                   1         -100.0     100.0          0.0     100.0
+
+DREAM setting
+dream_b             0.05
+dream_bdash         10d-6
+dream_delta         5
+
+File setting
+dream_odir_name     'val_output_dir/Grid_Output/project_name/Outputout_version/cropcrop'
+dream_ofile_name    'eee'

@@ -1,0 +1,15 @@
+! namelist of the variables related to MCMC Setting
+! The value is set mainly at "control.sh"
+&dream_list
+dream_nstep           = val_dream_nstep           ! The maximum number of MCMC steps.
+dream_nburn           = val_dream_nburn           ! The number of MCMC steps treated as burn-in steps.
+dream_minstep         = val_dream_minstep         ! The number of minimum MCMC steps.
+dream_param_interval  = val_dream_param_interval  ! The interval parameter saving.
+dream_est_interval    = val_dream_est_interval    ! The interval estimation saving.
+dream_gelman_interval = val_dream_gelman_interval ! The interval in which Gelman - Rubin's index is calcualted.
+dream_ncr             = val_dream_ncr             ! The number of chains crossed at each chain step.
+dream_est_dim         = val_dream_est_dim         ! The dimension of estimation which is outputed.
+dream_est_n           = val_dream_est_n           ! The length of estimation outputed.
+dream_nchain          = val_dream_nchain          ! The number of MCMC chains.
+dream_ndim            = val_dream_ndim            ! The dimension of parameter estimated.
+&end

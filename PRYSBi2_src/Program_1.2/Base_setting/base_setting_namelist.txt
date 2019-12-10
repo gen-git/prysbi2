@@ -1,0 +1,21 @@
+! namelist of the variables related to basic setup.
+! The value is set mainly at "control.sh"
+&read_all_list
+iyrstt          = temp_iyrstt          ! start year
+iyrend          = temp_iyrend          ! end year
+rnan            = -9999.0              ! missing value
+path_ana        = 'val_path_ana'       ! path to the file describing target grid
+path_topo       = 'val_path_topo'      ! path to the file describing topography
+path_soil       = 'val_path_soil'      ! path to the files describing soil data
+path_weather    = 'val_path_weather'   ! path to the files describing climate data
+path_yield      = 'val_path_yield'     ! path to the files describing yield data
+path_pheno      = 'val_path_pheno'     ! path to the files describing phenology
+path_co2        = 'val_path_co2'       ! path to the file describing co2 data
+path_gdp        = 'val_path_gdp'       ! path to the files describing GDP data
+path_param      = 'val_path_param'     ! path to the files describing parameter values
+path_fix_param  = 'val_path_fix_param' ! path to the files describing parameter values
+tgt_version     = 'val_tgt_version'    ! version name
+tgt_crop        = 'cropcrop'           ! crop name
+nsol            = 2                    ! number of soil layer
+nensemble       = val_nensemble        ! number of ensembles simulated
+&end

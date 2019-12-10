@@ -1,0 +1,8 @@
+&spm_namelist
+&end
+
+&swatnut_namelist
+&end
+
+&day_rothc_namelist
+&end

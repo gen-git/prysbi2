@@ -1,0 +1,10 @@
+&control_list
+read_spm_param_namelist = 0
+target_plant = 'cropcrop'
+common_nsol = 2
+ctl_adjust_plnt = val_ctl_adjust_plnt
+ctl_cut_strsw = val_ctl_cut_strsw
+ctl_nspin = val_ctl_nspin
+ctl_ca = val_ctl_ca
+ctl_adapt = val_ctl_adapt
+&end
