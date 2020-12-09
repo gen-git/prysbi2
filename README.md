@@ -5,7 +5,7 @@
 ## Description
 
 The basic structure is explained in Sakurai et al. (2014). Moreover, though the number of crops that can be simulated has been increased, the difference in the model among crops is basically only in the parameter values. Therefore, the different crops share the basic model structure (see Program_1.2/PRYSBI2/spm_param_fix).  
-The paper that includes the model description is now under review. However, you are free to submit the manuscript before the paper is accepted (for example, Okada et al. 2015, Porwollik et al. 2016, Müller et al. 2017).
+The paper that includes the model description is now under review. However, you are free to submit the manuscript before the paper is accepted (for example, Okada et al. 2015, Porwollik et al. 2016, Müller et al. 2017).
 
 ## Requirement
 
@@ -75,6 +75,8 @@ When you want to estimate the probability distributions of some parameter of the
 ## Refefences
 
 Sakurai et al. (2014) How much has the increase in atmospheric CO2 directly affected past soybean production? Scientific Reports.
+
 Okada et al. (2015) Modeling irrigation-based climate change adaptation in agriculture: model development and evaluation in Northeast China. Journal of Advances in Modeling Earth Systems.
-Müller et al. (2017) Global gridded crop model evaluation: benchmarking, skills, deficiencies and implications. Geoscientific Model Development.
+
+Müller et al. (2017) Global gridded crop model evaluation: benchmarking, skills, deficiencies and implications. Geoscientific Model Development.
 Porwollik et al. (2016) Spatial and temporal uncertainty of crop yield aggregations. European Journal of Zoology.
