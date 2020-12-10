@@ -5,7 +5,7 @@
 ## Description
 
 The basic structure is explained in Sakurai et al. (2014). Moreover, though the number of crops that can be simulated has been increased, the difference in the model among crops is basically only in the parameter values. Therefore, the different crops share the basic model structure (see Program_1.2/PRYSBI2/spm_param_fix).  
-The paper that includes the model description is now under review. However, you are free to submit the manuscript before the paper is accepted (for example, Okada et al. 2015, Porwollik et al. 2016, Müller et al. 2017).
+The paper that includes the model description is now under review. However, you are free to submit the manuscript before the paper is accepted (for example, Okada et al. 2015, Porwollik et al. 2016, Müller et al. 2017, Schewe et al. 2019, Müller et al. 2019, Doi et al. 2020, Yokohata et al. 2020).
 
 ## Requirement
 
