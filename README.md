@@ -74,9 +74,20 @@ When you want to estimate the probability distributions of some parameter of the
 
 ## Refefences
 
-Sakurai et al. (2014) How much has the increase in atmospheric CO2 directly affected past soybean production? Scientific Reports.
+Sakurai et al. (2014) How much has the increase in atmospheric CO2 directly affected past soybean production? Scientific Reports 4(4978):1-5.
 
-Okada et al. (2015) Modeling irrigation-based climate change adaptation in agriculture: model development and evaluation in Northeast China. Journal of Advances in Modeling Earth Systems.
+Okada et al. (2015) Modeling irrigation-based climate change adaptation in agriculture: model development and evaluation in Northeast China. Journal of Advances in Modeling Earth Systems. 7(3):1409-1424.
 
-Müller et al. (2017) Global gridded crop model evaluation: benchmarking, skills, deficiencies and implications. Geoscientific Model Development.
-Porwollik et al. (2016) Spatial and temporal uncertainty of crop yield aggregations. European Journal of Zoology.
+Porwollik et al. (2016) Spatial and temporal uncertainty of crop yield aggregations. European Journal of Agronomy 88:10-21.
+
+Müller et al. (2017) Global gridded crop model evaluation: benchmarking, skills, deficiencies and implications. Geoscientific Model Development 10(4):1403-1422.
+
+Schewe et al. (2019) State-of-the-art global models underestimate impacts from climate extremes. Nature Communications 10(1005):1-14.
+
+Müller et al. (2019) The Global Gridded Crop Model Intercomparison phase 1 simulation dataset. Scientific Data 6(50):1-22.
+
+Doi et al. (2020) Seasonal Predictability of Four Major Crop Yields Worldwide by a Hybrid System of Dynamical Climate Prediction and Eco-Physiological Crop-Growth Simulation. Frontiers in Sustainable Food Systems 4.
+
+Yokohata et al. (2020) MIROC-INTEG-LAND version 1: a global biogeochemical land surface model with human water management, crop growth, and land-use change. Geoscientific Model Development 13 4713 - 4747.
+
+
